@@ -7,29 +7,35 @@
 //
 
 import UIKit
-
+//struct points {
+//    static let addedPoints = "addedPoints"
+//}
 class InsertCodeViewController: UIViewController, UITextFieldDelegate {
     var myInt = Int()
     @IBOutlet weak var codeTextField: UITextField!
-//    @IBAction func InsertButton(_ sender: Any) {
-////        let next = self.storyboard?.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
-////        let myInt = Double(codeTextField.text!)
-////        next.intPassed = myInt!
-////        self.navigationController?.pushViewController(next, animated: true)
-//        
-//    }
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
+    @IBAction func InsertButton(_ sender: Any) {
+        let controller = DashboardViewController()
+        controller.intPassed = Int(codeTextField.text!)!
+        self.performSegue(withIdentifier: "insertCode", sender: nil)
+        
+    }
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "insertCode" {
+            if segue.destination is DashboardViewController {
+                let controller: DashboardViewController = segue.destination as! DashboardViewController
+                controller.intPassed = Int(codeTextField.text!)!
+                //                UserDefaults.standard.set(controller.intPassed, forKey: points.addedPoints)
+            }
+            return
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-
-//        codeTextField.delegate = self
-//        let myInt = Double(codeTextField.text!)
+//        self.prepare(for: DashboardViewController, sender: <#Any?#>)
+        
     }
     
 //    func pointsGainedFromProduct( textField : UITextField,replacementString string: String) -> Bool {
@@ -40,5 +46,14 @@ class InsertCodeViewController: UIViewController, UITextFieldDelegate {
 //            <#code#>
 //        }
 //    }
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
 }

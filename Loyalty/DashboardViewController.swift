@@ -7,17 +7,21 @@
 //
 
 import UIKit
-
+struct points {
+    static let addedPoints = "addedPoints"
+}
 class DashboardViewController: UIViewController {
-    var intPassed = Double()
+    public var intPassed = Int()
     @IBOutlet weak var barCodeLabel: UILabel!
     @IBOutlet weak var barCodeImage: UIImageView!
     @IBOutlet weak var pointsLabel: UILabel!
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         barCodeImage.image = generateBarcode(from:  barCodeLabel.text!)
-//        pointsLabel.text = String(intPassed)
+        pointsLabel.text = String(intPassed)
+        UserDefaults.standard.set(Int(pointsLabel.text!)! + intPassed, forKey: points.addedPoints)
 //        pointsLabel
     }
 
