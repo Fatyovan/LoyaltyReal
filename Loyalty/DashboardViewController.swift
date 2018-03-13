@@ -14,13 +14,11 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var barCodeImage: UIImageView!
     @IBOutlet weak var pointsLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         barCodeImage.image = generateBarcode(from:  barCodeLabel.text!)
 //        pointsLabel.text = String(intPassed)
 //        pointsLabel
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
