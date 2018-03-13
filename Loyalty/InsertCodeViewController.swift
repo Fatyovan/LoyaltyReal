@@ -7,29 +7,31 @@
 //
 
 import UIKit
-//struct points {
-//    static let addedPoints = "addedPoints"
-//}
+struct newPoints {
+    static let addedPoints = "addedPoints"
+}
+public var pointsAdded = Int()
+
 class InsertCodeViewController: UIViewController, UITextFieldDelegate {
-    var myInt = Int()
     @IBOutlet weak var codeTextField: UITextField!
     @IBAction func InsertButton(_ sender: Any) {
-        let controller = DashboardViewController()
-        controller.intPassed = Int(codeTextField.text!)!
-        self.performSegue(withIdentifier: "insertCode", sender: nil)
+       pointsAdded = Int(codeTextField.text!)!
+        let defaults = UserDefaults.standard
+       defaults.set(defaults.integer(forKey: newPoints.addedPoints)+pointsAdded, forKey: newPoints.addedPoints)
+//        self.performSegue(withIdentifier: "insertCode", sender: nil)
         
     }
    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "insertCode" {
-            if segue.destination is DashboardViewController {
-                let controller: DashboardViewController = segue.destination as! DashboardViewController
-                controller.intPassed = Int(codeTextField.text!)!
-                //                UserDefaults.standard.set(controller.intPassed, forKey: points.addedPoints)
-            }
-            return
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "insertCode" {
+//            if segue.destination is DashboardViewController {
+//                let controller: DashboardViewController = segue.destination as! DashboardViewController
+//                pointsAdded = Int(codeTextField.text!)!
+//                UserDefaults.standard.set(controller.pointsLabel, forKey: points.addedPoints)
+//            }
+//            return
+//        }
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -474,7 +474,6 @@
                                 </state>
                                 <connections>
                                     <action selector="InsertButton:" destination="hi7-9V-AFz" eventType="touchUpInside" id="ABg-k9-8O3"/>
-                                    <segue destination="zzb-Zp-lFo" kind="show" identifier="insertCode" id="773-RH-V56"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -699,6 +698,6 @@
         <image name="loyalty" width="900" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="773-RH-V56"/>
+        <segue reference="xjc-2M-fEW"/>
     </inferredMetricsTieBreakers>
 </document>

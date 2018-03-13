@@ -7,11 +7,9 @@
 //
 
 import UIKit
-struct points {
-    static let addedPoints = "addedPoints"
-}
+
 class DashboardViewController: UIViewController {
-    public var intPassed = Int()
+//    public var intPassed = Int()
     @IBOutlet weak var barCodeLabel: UILabel!
     @IBOutlet weak var barCodeImage: UIImageView!
     @IBOutlet weak var pointsLabel: UILabel!
@@ -20,16 +18,18 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         barCodeImage.image = generateBarcode(from:  barCodeLabel.text!)
-        pointsLabel.text = String(intPassed)
-        UserDefaults.standard.set(Int(pointsLabel.text!)! + intPassed, forKey: points.addedPoints)
-//        pointsLabel
+//        let defaults = UserDefaults.standard
+//        if let stringOne = defaults.string(forKey: newPoints.addedPoints) {
+//            pointsLabel.text = stringOne
+//        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        let defaults = UserDefaults.standard
+        if let stringOne = defaults.string(forKey: newPoints.addedPoints) {
+            pointsLabel.text = stringOne
+        }
     }
-    
 
     func generateBarcode(from string: String) -> UIImage? {
         let data = string.data(using: String.Encoding.ascii)
