@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E1E85E62057560B002BA690 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E85E52057560B002BA690 /* OrderViewController.swift */; };
+		8E1E85E920575C6E002BA690 /* RewardssTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E85E720575C6E002BA690 /* RewardssTableViewCell.swift */; };
+		8E1E85EA20575C6E002BA690 /* RewardssTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E1E85E820575C6E002BA690 /* RewardssTableViewCell.xib */; };
+		8E1E85EC2057D0AC002BA690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1E85EB2057D0AC002BA690 /* Main.storyboard */; };
+		8E380C6F205179FB002D891D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E380C6E205179FB002D891D /* TabBarViewController.swift */; };
+		8E380C7120517F33002D891D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E380C7020517F33002D891D /* DashboardViewController.swift */; };
+		8E380C7320518660002D891D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E380C7220518660002D891D /* SignUpViewController.swift */; };
+		8E4509C7204EC5EE00F89B94 /* EnterPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4509C6204EC5EE00F89B94 /* EnterPinViewController.swift */; };
 		8E7D4DC52048422E00765B98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D4DC42048422E00765B98 /* AppDelegate.swift */; };
 		8E7D4DC72048422E00765B98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D4DC62048422E00765B98 /* ViewController.swift */; };
-		8E7D4DCA2048422E00765B98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7D4DC82048422E00765B98 /* Main.storyboard */; };
 		8E7D4DCC2048422E00765B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7D4DCB2048422E00765B98 /* Assets.xcassets */; };
 		8E7D4DCF2048422E00765B98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7D4DCD2048422E00765B98 /* LaunchScreen.storyboard */; };
 		8E7D4DDA2048422E00765B98 /* LoyaltyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D4DD92048422E00765B98 /* LoyaltyTests.swift */; };
 		8E7D4DE52048422E00765B98 /* LoyaltyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D4DE42048422E00765B98 /* LoyaltyUITests.swift */; };
+		8E7D4DF3204844BD00765B98 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D4DF2204844BD00765B98 /* InitialViewController.swift */; };
+		8E95F466204D83F3006F3AA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95F465204D83F3006F3AA3 /* LoginViewController.swift */; };
+		8E95F468204D9364006F3AA3 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95F467204D9364006F3AA3 /* ForgotPasswordViewController.swift */; };
+		8EF2CE1D2055A9E8001349D6 /* RewardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF2CE1B2055A9E8001349D6 /* RewardsTableViewController.swift */; };
+		8EF2CE212055AAA6001349D6 /* RewardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF2CE1F2055AAA6001349D6 /* RewardsTableViewCell.swift */; };
+		8EF2CE242056B1F7001349D6 /* ChangePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF2CE232056B1F7001349D6 /* ChangePassViewController.swift */; };
+		8EF2CE262056C0AD001349D6 /* InsertCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF2CE252056C0AD001349D6 /* InsertCodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +48,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E1E85E52057560B002BA690 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		8E1E85E720575C6E002BA690 /* RewardssTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardssTableViewCell.swift; sourceTree = "<group>"; };
+		8E1E85E820575C6E002BA690 /* RewardssTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardssTableViewCell.xib; sourceTree = "<group>"; };
+		8E1E85EB2057D0AC002BA690 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8E380C6E205179FB002D891D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		8E380C7020517F33002D891D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		8E380C7220518660002D891D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8E4509C6204EC5EE00F89B94 /* EnterPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPinViewController.swift; sourceTree = "<group>"; };
 		8E7D4DC12048422E00765B98 /* Loyalty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loyalty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7D4DC42048422E00765B98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E7D4DC62048422E00765B98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8E7D4DC92048422E00765B98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E7D4DCB2048422E00765B98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E7D4DCE2048422E00765B98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E7D4DD02048422E00765B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +68,13 @@
 		8E7D4DE02048422E00765B98 /* LoyaltyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoyaltyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7D4DE42048422E00765B98 /* LoyaltyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyaltyUITests.swift; sourceTree = "<group>"; };
 		8E7D4DE62048422E00765B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E7D4DF2204844BD00765B98 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		8E95F465204D83F3006F3AA3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8E95F467204D9364006F3AA3 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		8EF2CE1B2055A9E8001349D6 /* RewardsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTableViewController.swift; sourceTree = "<group>"; };
+		8EF2CE1F2055AAA6001349D6 /* RewardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTableViewCell.swift; sourceTree = "<group>"; };
+		8EF2CE232056B1F7001349D6 /* ChangePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassViewController.swift; sourceTree = "<group>"; };
+		8EF2CE252056C0AD001349D6 /* InsertCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +127,24 @@
 			children = (
 				8E7D4DC42048422E00765B98 /* AppDelegate.swift */,
 				8E7D4DC62048422E00765B98 /* ViewController.swift */,
-				8E7D4DC82048422E00765B98 /* Main.storyboard */,
-				8E7D4DCB2048422E00765B98 /* Assets.xcassets */,
+				8E1E85E52057560B002BA690 /* OrderViewController.swift */,
+				8EF2CE1B2055A9E8001349D6 /* RewardsTableViewController.swift */,
+				8EF2CE1F2055AAA6001349D6 /* RewardsTableViewCell.swift */,
+				8E1E85EB2057D0AC002BA690 /* Main.storyboard */,
+				8E1E85E720575C6E002BA690 /* RewardssTableViewCell.swift */,
+				8E1E85E820575C6E002BA690 /* RewardssTableViewCell.xib */,
+				8EF2CE252056C0AD001349D6 /* InsertCodeViewController.swift */,
+				8E380C7020517F33002D891D /* DashboardViewController.swift */,
+				8E380C6E205179FB002D891D /* TabBarViewController.swift */,
 				8E7D4DCD2048422E00765B98 /* LaunchScreen.storyboard */,
+				8E7D4DCB2048422E00765B98 /* Assets.xcassets */,
 				8E7D4DD02048422E00765B98 /* Info.plist */,
+				8E7D4DF2204844BD00765B98 /* InitialViewController.swift */,
+				8E380C7220518660002D891D /* SignUpViewController.swift */,
+				8E95F465204D83F3006F3AA3 /* LoginViewController.swift */,
+				8E95F467204D9364006F3AA3 /* ForgotPasswordViewController.swift */,
+				8EF2CE232056B1F7001349D6 /* ChangePassViewController.swift */,
+				8E4509C6204EC5EE00F89B94 /* EnterPinViewController.swift */,
 			);
 			path = Loyalty;
 			sourceTree = "<group>";
@@ -232,9 +274,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1E85EA20575C6E002BA690 /* RewardssTableViewCell.xib in Resources */,
 				8E7D4DCF2048422E00765B98 /* LaunchScreen.storyboard in Resources */,
 				8E7D4DCC2048422E00765B98 /* Assets.xcassets in Resources */,
-				8E7D4DCA2048422E00765B98 /* Main.storyboard in Resources */,
+				8E1E85EC2057D0AC002BA690 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +302,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EF2CE212055AAA6001349D6 /* RewardsTableViewCell.swift in Sources */,
+				8EF2CE1D2055A9E8001349D6 /* RewardsTableViewController.swift in Sources */,
+				8E1E85E920575C6E002BA690 /* RewardssTableViewCell.swift in Sources */,
+				8E95F466204D83F3006F3AA3 /* LoginViewController.swift in Sources */,
+				8E1E85E62057560B002BA690 /* OrderViewController.swift in Sources */,
+				8EF2CE242056B1F7001349D6 /* ChangePassViewController.swift in Sources */,
+				8E95F468204D9364006F3AA3 /* ForgotPasswordViewController.swift in Sources */,
+				8E7D4DF3204844BD00765B98 /* InitialViewController.swift in Sources */,
 				8E7D4DC72048422E00765B98 /* ViewController.swift in Sources */,
+				8E380C6F205179FB002D891D /* TabBarViewController.swift in Sources */,
 				8E7D4DC52048422E00765B98 /* AppDelegate.swift in Sources */,
+				8E380C7320518660002D891D /* SignUpViewController.swift in Sources */,
+				8EF2CE262056C0AD001349D6 /* InsertCodeViewController.swift in Sources */,
+				8E4509C7204EC5EE00F89B94 /* EnterPinViewController.swift in Sources */,
+				8E380C7120517F33002D891D /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +352,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8E7D4DC82048422E00765B98 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E7D4DC92048422E00765B98 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8E7D4DCD2048422E00765B98 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -429,6 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U2H98Y2573;
 				INFOPLIST_FILE = Loyalty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.IvanJovanovik.Loyalty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +493,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U2H98Y2573;
 				INFOPLIST_FILE = Loyalty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.IvanJovanovik.Loyalty;
 				PRODUCT_NAME = "$(TARGET_NAME)";

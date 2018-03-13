@@ -13,12 +13,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    public var navcontroller : UINavigationController!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -12)
+
+        let colorNormal : UIColor = UIColor.lightText
+        let colorSelected : UIColor = UIColor.white
+        let titleFontAll : UIFont = UIFont(name: "Arial", size: 17.0)!
+        
+        let attributesNormal = [
+            NSAttributedStringKey.foregroundColor : colorNormal,
+            NSAttributedStringKey.font : titleFontAll,
+        ]
+        let attributesSelected = [
+            NSAttributedStringKey.foregroundColor : colorSelected,
+            NSAttributedStringKey.font : titleFontAll
+        ]
+        
+        UITabBarItem.appearance().setTitleTextAttributes(attributesNormal, for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes(attributesSelected, for: .selected)
+        
+//        self.tabbarrootcontrolelr()
+        
         return true
     }
 
+    func tabbarrootcontrolelr() -> Void {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+//        let centerViewController = mainStoryboard.instantiateViewController(withIdentifier: "TabBarViewController") as! TabBarViewController
+        
+        navcontroller = mainStoryboard.instantiateViewController(withIdentifier: "MainNavController") as! UINavigationController
+        
+//        let leftViewController = mainStoryboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+//
+//        let leftSideNav = UINavigationController(rootViewController: leftViewController)
+//        let centerNav = UINavigationController(rootViewController: centerViewController)
+//
+//        centerContainer = MMDrawerController(center: navcontroller, leftDrawerViewController: leftSideNav)
+
+
+//        centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.panningCenterView;
+//        centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.panningCenterView;
+        
+        window!.rootViewController = navcontroller
+        window!.makeKeyAndVisible()
+        
+    }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
