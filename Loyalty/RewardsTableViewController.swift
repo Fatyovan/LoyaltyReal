@@ -32,12 +32,16 @@ class RewardsTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if arrayOfCellData[indexPath.row].cell == 1 {
+            let totalPoints = UserDefaults.standard.integer(forKey: newPoints.addedPoints)
             let cell = Bundle.main.loadNibNamed("RewardssTableViewCell", owner: self, options: nil)?.first as! RewardssTableViewCell
             
             cell.mainImage.image = arrayOfCellData[indexPath.row].mainImage
             cell.mainLabel.text = arrayOfCellData[indexPath.row].mainlabel
             cell.pointsImage.image = arrayOfCellData[indexPath.row].pointsImage
             cell.pointsLabel.text = arrayOfCellData[indexPath.row].pointsLabel
+            if totalPoints >= Int(cell.pointsLabel.text!)!{
+                cell.pointsLabel.textColor = UIColor.green
+            }
             cell.descriptionLabel.text = arrayOfCellData[indexPath.row].descriptionLabel
             
             return cell

@@ -380,7 +380,7 @@
                                         <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="700" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yse-N4-pVo">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yse-N4-pVo">
                                         <rect key="frame" x="318" y="30" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.28800642490386963" green="0.33817291259765625" blue="0.48336976766586304" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -457,7 +457,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert your product code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ifO-qR-GBT">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert your product code" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ifO-qR-GBT">
                                 <rect key="frame" x="16" y="225" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -552,6 +552,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="order:" destination="8Fr-Wd-0IU" eventType="touchUpInside" id="Cuq-aM-kgU"/>
                                     <segue destination="zzb-Zp-lFo" kind="show" id="zgO-NN-o8o"/>
                                 </connections>
                             </button>
@@ -698,6 +699,6 @@
         <image name="loyalty" width="900" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xjc-2M-fEW"/>
+        <segue reference="zgO-NN-o8o"/>
     </inferredMetricsTieBreakers>
 </document>

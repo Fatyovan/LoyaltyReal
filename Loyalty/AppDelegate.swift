@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBarItem.appearance().setTitleTextAttributes(attributesNormal, for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes(attributesSelected, for: .selected)
         
-        self.tabbarrootcontrolelr()
+//        self.tabbarrootcontrolelr()
         
         return true
     }
