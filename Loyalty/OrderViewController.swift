@@ -11,7 +11,9 @@ import UIKit
 class OrderViewController: UIViewController {
     @IBOutlet weak var productImage: UIImageView!
     @IBAction func order(_ sender: Any) {
-       perfromAlert()
+    //   perfromAlert()
+        self.navigationController?.popViewController(animated:true)
+
     }
     
     override func viewDidLoad() {
@@ -25,9 +27,19 @@ class OrderViewController: UIViewController {
     }
     func perfromAlert(){
         let alert  = UIAlertController (title: "Succes", message: "You successfuly order this pro", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        
+        let action = UIAlertAction(title: "OK", style: .default, handler: { (alert) in
+            
+  
+        })
+        alert.addAction(action)
+
         self.present(alert, animated: false, completion: nil)
+       
+
+
     }
+
     
     @objc func dismissKeyboard() {
         view.endEditing(true)

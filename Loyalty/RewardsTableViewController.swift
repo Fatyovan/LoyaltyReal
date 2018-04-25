@@ -26,7 +26,9 @@ class RewardsTableViewController: UITableViewController {
                            cellData1(cell: 1, mainlabel: "Mouse", mainImage: #imageLiteral(resourceName: "mouse"), pointsImage: #imageLiteral(resourceName: "zvezda"), pointsLabel: "500", descriptionLabel: "*Mouse logitech"),
                            cellData1(cell: 1, mainlabel: "Keyboard", mainImage: #imageLiteral(resourceName: "keyboard"), pointsImage: #imageLiteral(resourceName: "zvezda"), pointsLabel: "400", descriptionLabel: "*Keyboard logitech"),]
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableView.reloadData()
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayOfCellData.count
     }
